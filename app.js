@@ -8,9 +8,9 @@ const authHandler = require("./middleware/authHandler");
 const notfound = require("./middleware/404");
 require("dotenv").config();
 
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cors());
 
 const PORT = process.env.PORT || 5001;
 
