@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: false }));
 const PORT = process.env.PORT || 5001;
 
 app.get("/", (req, res) => {
-  res.json({ message: "AMAKA SERVER RUNNING" });
+  res.json({ message: "AMAKA SERVER RUNNING UPDATED" });
 });
 
 app.post("/", authHandler, async (req, res) => {
